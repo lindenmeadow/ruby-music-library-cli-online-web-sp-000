@@ -26,7 +26,6 @@ class Artist
   end
 
   def add_song(song)
-
       song.artist = self uness song.artist
       songs << song
     end
