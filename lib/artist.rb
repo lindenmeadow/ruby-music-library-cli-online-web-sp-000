@@ -32,7 +32,7 @@ class Artist
   end
 
   def genres
-    x = songs.collect do |song|
+    genres = songs.collect do |song|
       song.genre
     end.unique
   end
