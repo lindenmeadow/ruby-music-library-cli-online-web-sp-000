@@ -54,7 +54,7 @@ class Song
     artist, song, genre = file.split(" - ")
     song_artist = Artist.find_or_create_by_name(artist)
     song_genre = Genre.find_or_create_by_name(genre)
-    new_song = Song.create(song, song_artist, song_genre)
+    new_song = Song.create(song)
   end
 
 end
