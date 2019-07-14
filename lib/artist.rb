@@ -26,7 +26,7 @@ class Artist
   end
 
   def add_song(song)
-      song.artist = self uness song.artist
+      song.artist = self unless song.artist
       songs << song
     end
   end
